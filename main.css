@@ -1,0 +1,336 @@
+/* Start Global Rules */
+:root {
+  --green-color: #009688;
+  --grey-color: #607d8b;
+  --light-green-color: #2e8a11;
+  --red-color: #ff0600;
+  --pink-color: #e92166;
+  --blue-color: #2196f3;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Cairo", sans-serif;
+  background-color: #f5f5f5;
+}
+
+.container {
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+@media (min-width: 768px) {
+  .container {
+    width: 720px;
+  }
+}
+
+@media (min-width: 992px) {
+  .container {
+    width: 960px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .container {
+    width: 1140px;
+  }
+}
+
+@media (min-width: 1400px) {
+  .container {
+    width: 1320px;
+  }
+}
+
+.heading {
+  color: white;
+  background-color: var(--grey-color);
+  width: fit-content;
+  padding: 5px 15px;
+  font-size: 25px;
+  margin-bottom: 10px;
+}
+
+/* End Global Rules */
+/* Start Photo */
+.photo {
+  margin: 25px 0;
+}
+
+.photo .container {
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  line-height: 1.6;
+  position: relative;
+}
+
+.photo .container .pic {
+  padding: 15px;
+  border-right: 1px solid #ccc;
+  text-align: center;
+  min-width: 250px;
+}
+
+.photo .container .pic img {
+  width: 200px;
+  height: 200px;
+  border: 5px solid #ddd;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  box-shadow: 0 0 10px #ddd;
+}
+
+.photo .container .pic > h3 {
+  font-size: 25px;
+}
+
+.photo .container .pic > span {
+  display: block;
+  width: 100%;
+  height: 22px;
+  background-color: #f5f5f5;
+  position: relative;
+  border-radius: 6px;
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  -ms-border-radius: 6px;
+  -o-border-radius: 6px;
+  margin: 5px 0;
+}
+
+.photo .container .pic > span::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 75%;
+  height: 100%;
+  background-color: var(--green-color);
+  border-radius: 6px 0 0 6px;
+}
+
+.photo .container .pic p {
+  font-weight: 300;
+  font-size: 18px;
+}
+
+.photo .container .pic p span {
+  color: var(--green-color);
+  margin-right: 5px;
+  font-weight: bold;
+}
+
+.photo .container .text {
+  padding: 15px 25px;
+  position: relative;
+}
+
+.photo .container .text h2 {
+  font-size: 42px;
+}
+
+.photo .container .text p {
+  margin: 10px 0 20px;
+  font-size: 21px;
+  font-weight: 300;
+  line-height: 2;
+}
+
+.photo .container .text h5 {
+  position: absolute;
+  bottom: 10px;
+  right: 0px;
+  font-weight: 200;
+  font-size: 18px;
+}
+
+.photo .container::after {
+  content: "";
+  width: 100%;
+  height: 1px;
+  position: absolute;
+  top: calc(100% + 20px);
+  left: 0;
+  background-color: #eee;
+}
+
+/* End Photo */
+/* Start Points Log */
+.points {
+  margin: 20px 0;
+}
+
+.points .container {
+  background-color: white;
+  padding: 20px;
+  margin-top: 40px;
+  position: relative;
+}
+
+.points .container p {
+  font-weight: 200;
+  padding: 10px 0;
+  font-size: 18px;
+}
+
+.points .container p:not(:last-child) {
+  border-bottom: 1px solid #ddd;
+}
+
+.points .container p span:first-child {
+  color: var(--green-color);
+  font-weight: bold;
+}
+
+.points .container p span:last-child {
+  color: var(--pink-color);
+  font-weight: bold;
+}
+
+.points .container::after {
+  content: "";
+  width: 100%;
+  height: 1px;
+  position: absolute;
+  top: calc(100% + 20px);
+  left: 0;
+  background-color: #eee;
+}
+
+/* End Points Log */
+/* Start Trophies */
+.trophies {
+  margin: 20px 0;
+}
+
+.trophies .container {
+  background-color: white;
+  padding: 20px;
+  margin-top: 40px;
+  position: relative;
+}
+
+.trophies .container .photos {
+  padding: 5px 0 10px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 7px;
+}
+
+.trophies .container .photos img {
+  width: 85px;
+  height: 85px;
+}
+
+.trophies .container .photos img.not {
+  opacity: .1;
+}
+
+.trophies .container::after {
+  content: "";
+  width: 100%;
+  height: 1px;
+  position: absolute;
+  top: calc(100% + 20px);
+  left: 0;
+  background-color: #eee;
+}
+
+/* End Trophies */
+/* Start Ladder News */
+.ladder {
+  margin: 20px 0;
+}
+
+.ladder .container {
+  background-color: white;
+  padding: 20px;
+  margin-top: 40px;
+  position: relative;
+}
+
+.ladder .container > p {
+  font-weight: 300;
+  font-size: 22px;
+}
+
+.ladder .container > p span {
+  font-weight: bold;
+}
+
+.ladder .container > p .red {
+  color: var(--red-color);
+}
+
+.ladder .container > p .blue {
+  color: var(--blue-color);
+}
+
+.ladder .container::after {
+  content: "";
+  width: 100%;
+  height: 1px;
+  position: absolute;
+  top: calc(100% + 20px);
+  left: 0;
+  background-color: #eee;
+}
+
+/* End Ladder News */
+/* Start Your Powers */
+.powers {
+  margin: 20px 0;
+}
+
+.powers .container {
+  background-color: white;
+  padding: 20px;
+  margin-top: 40px;
+  position: relative;
+}
+
+.powers .container li {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 0;
+  font-size: 20px;
+  font-weight: 300;
+}
+
+.powers .container li:not(:last-child) {
+  border-bottom: 1px solid #ddd;
+}
+
+.powers .container li span {
+  font-weight: bold;
+}
+
+.powers .container li .green {
+  color: var(--light-green-color);
+}
+
+.powers .container li .red {
+  color: var(--red-color);
+}
+
+/* End Your Powers */
