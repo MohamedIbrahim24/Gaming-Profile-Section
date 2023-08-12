@@ -34,6 +34,12 @@ a {
   text-decoration: none;
 }
 
+@media (min-width: 576px) {
+  .container {
+    width: 540px;
+  }
+}
+
 @media (min-width: 768px) {
   .container {
     width: 720px;
@@ -81,12 +87,25 @@ a {
   position: relative;
 }
 
+@media (max-width:767px) {
+  .photo .container {
+    flex-direction: column;
+  }
+}
+
 .photo .container .pic {
   padding: 15px;
   border-right: 1px solid #ccc;
   text-align: center;
   min-width: 250px;
 }
+
+@media (max-width:767px) {
+  .photo .container .pic {
+    border-right: none;
+  }
+}
+
 
 .photo .container .pic img {
   width: 200px;
@@ -145,6 +164,12 @@ a {
   position: relative;
 }
 
+@media (max-width: 767px) {
+  .photo .container .text {
+    text-align: center;
+  }
+}
+
 .photo .container .text h2 {
   font-size: 42px;
 }
@@ -154,6 +179,12 @@ a {
   font-size: 21px;
   font-weight: 300;
   line-height: 2;
+}
+
+@media (max-width: 991px) {
+  .photo .container .text p {
+    font-size: 18px;
+  }
 }
 
 .photo .container .text h5 {
@@ -238,8 +269,36 @@ a {
 }
 
 .trophies .container .photos img {
-  width: 85px;
-  height: 85px;
+  width: 100px;
+  height: 100px;
+}
+
+@media (max-width:1399px) {
+  .trophies .container .photos img {
+    width: 85px;
+    height: 85px;
+  }
+}
+
+@media (max-width:1199px) {
+  .trophies .container .photos img {
+    width: 70px;
+    height: 70px;
+  }
+}
+
+@media (max-width:991px) {
+  .trophies .container .photos img {
+    width: 78px;
+    height: 78px;
+  }
+}
+
+@media (max-width:767px) {
+  .trophies .container .photos img {
+    width: 77px;
+    height: 77px;
+  }
 }
 
 .trophies .container .photos img.not {
@@ -272,6 +331,12 @@ a {
 .ladder .container > p {
   font-weight: 300;
   font-size: 22px;
+}
+
+@media (max-width: 991px) {
+  .ladder .container > p {
+    font-size: 17px;
+  }
 }
 
 .ladder .container > p span {
